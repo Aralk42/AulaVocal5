@@ -59,6 +59,30 @@ html {
     background-position: center;
 }
 
+.FondoObras {
+    display: block;
+    padding: 60px 120px;
+    /* padding: 5rem 10rem; */
+    background-image: url(images/FondoLetras2.png);
+    background-size: 100% 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+
+.containerObras{
+    display: flex; 
+    align-content: stretch;
+    margin: 2rem;
+    justify-content: center;
+}
+
+.FondoObras:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.7);
+}
+
+
+
 .container {
     /* max-width:600px;  */
      display: flex; 
@@ -66,7 +90,7 @@ html {
     /* overflow: visible;  */
     margin: 2rem 5rem;
     padding: 1rem 1rem 1rem 1rem;
-     justify-content: center;  /* space-around; */
+    justify-content: center;  /* space-around; */
 }
 
 .myImage {
