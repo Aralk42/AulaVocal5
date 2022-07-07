@@ -67,16 +67,19 @@ html {
 }
 
 .FondoObras {
+    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
     display: block;
     padding: 60px 120px;
     /* padding: 5rem 10rem; */
-    background-color:rgba(67,56,253,0.75);
+    background-color:rgba(19, 9, 107, 0.82);
     border-radius: 0.7rem;
     /* background-image: url(images/FondoLetras2.png); */
     background-size: 100% 100%;
     text-decoration: none;
     color: white;
     font-size: 3rem;
+    min-width: 1000px;
 }
 
 .containerObras{
@@ -84,10 +87,12 @@ html {
     align-content: stretch;
     margin: 2rem;
     justify-content: center;
+    /* min-width: 2000px; */
 }
 
 .FondoObras:hover {
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.7);
+    background-color: rgba(19, 9, 107, 0.95);
 }
 
 
