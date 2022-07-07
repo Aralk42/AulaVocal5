@@ -67,10 +67,11 @@ html {
 }
 
 .FondoObras {
+    display: flex;
     transition: background-color 0.3s ease;
     transition: box-shadow 0.3s ease;
-    display: block;
     padding: 60px 120px;
+    margin-top: 3rem;
     /* padding: 5rem 10rem; */
     background-color:rgba(19, 9, 107, 0.82);
     border-radius: 0.7rem;
@@ -79,7 +80,7 @@ html {
     text-decoration: none;
     color: white;
     font-size: 3rem;
-    min-width: 60rem;
+    /* min-width: 60rem; */
 }
 
 .containerObras{
