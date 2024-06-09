@@ -76,7 +76,7 @@ button{
 }
 
 .FondoObras {
-    width: auto;
+    width: 800px;
     display: flex;
     transition: background-color 0.3s ease;
     transition: box-shadow 0.3s ease;
@@ -89,12 +89,12 @@ button{
 }
 
 .containerObras{
+    justify-content: center;
+    align-items: center;
     width: auto;
     display: flex;
     flex-direction: column; 
-    align-items: flex-start;
     margin: 20px;
-    justify-content: center;
 }
 
 .FondoObras:hover {

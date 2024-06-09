@@ -27,3 +27,28 @@ function showInformation(){
     document.getElementById("Informacion").style.display = "block";
     document.getElementById("titulo").innerHTML = "Informació";
 }
+
+function changeTextLanguage(el){
+    let all_texts_valencia = document.getElementsByClassName("TextValencia");
+    
+    let all_texts_castella = document.getElementsByClassName("TextCastella");
+
+    if(el.innerHTML === "Valencià"){
+        for(let i =0; i< all_texts_castella.length; i++){
+            all_texts_castella[i].style.display = "none";
+        }
+        for(let i =0; i< all_texts_valencia.length; i++){
+            all_texts_valencia[i].style.display = "block";
+        }
+        el.innerHTML = "Castellano";
+        
+    }else if (el.innerHTML === "Castellano"){
+        for(let i =0; i< all_texts_valencia.length; i++){
+            all_texts_valencia[i].style.display = "none";
+        }
+        for(let i =0; i< all_texts_castella.length; i++){
+            all_texts_castella[i].style.display = "block";
+        }
+        el.innerHTML = "Valencià"; 
+    }
+}
