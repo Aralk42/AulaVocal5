@@ -5,8 +5,17 @@ html {
 *{
     margin: 0;
     padding: 0;
+    border-radius: 0;
+    border: 0;
 }
 
+button{
+    cursor: pointer;
+}
+.p{
+    line-height: normal;
+    text-indent: 0;
+}
 .TheHeader {
     display: flex;
     background-color: rgba(9,0,34,0.5);
@@ -67,28 +76,25 @@ html {
 }
 
 .FondoObras {
+    width: auto;
     display: flex;
     transition: background-color 0.3s ease;
     transition: box-shadow 0.3s ease;
     padding: 60px 120px;
-    margin-top: 3rem;
-    /* padding: 5rem 10rem; */
-    background-color:rgba(19, 9, 107, 0.82);
-    border-radius: 0.7rem;
-    /* background-image: url(images/FondoLetras2.png); */
-    background-size: 100% 100%;
+    margin-top: 20px;
+    background-color:rgba(19, 9, 107, 0.82);  
     text-decoration: none;
     color: white;
     font-size: 3rem;
-    /* min-width: 60rem; */
 }
 
 .containerObras{
-    display: flex; 
-    align-content: stretch;
-    margin: 2rem;
+    width: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin: 20px;
     justify-content: center;
-    /* min-width: 2000px; */
 }
 
 .FondoObras:hover {
@@ -108,23 +114,13 @@ html {
     justify-content: center;  /* space-around; */
 }
 
-.myImage {
-    float: left;
-    width: 100%;
-    max-width: 550px;
-    object-fit: contain;
-    border: hidden 2px rgba(163,191,255,0.75);
-    border-radius: 0.5rem;
-    margin-right: 15px;
-}
-
 .myImageLeft {
     float: left;
     width: 100%;
     max-width: 300px;
     object-fit: contain;
 /*     border: hidden 2px rgba(163,191,255,0.75);
-    border-radius: 0.5rem; */
+    border-radius: 0rem; */
     margin-right: 15px;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -142,15 +138,6 @@ html {
     margin-top: 15px;
 }
 
-.post {
-    float: right;
-    margin: 1rem 1rem;
-    max-width: 600px;
-   
-}
-/* .container2 {
-
-} */
 h2 {
     text-align: center;
     padding: 1rem 0;

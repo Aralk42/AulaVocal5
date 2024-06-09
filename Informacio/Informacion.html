@@ -1,0 +1,50 @@
+<div style="display: flex; justify-content: center; white-space: nowrap; flex-direction: column;">
+    <div class="containerObras">
+        
+            <button id="Renacimiento" class="FondoObras"><h4> Renaixement (Tomás Luis de Victoria) </h4></button>
+            <div id="Contenido_Renacimiento" style="display: none; width: 100%; overflow-x: auto;"></div>
+        
+    </div>
+    <div class="containerObras">
+
+        <button id="Barroco" class="FondoObras"><h4> Barroc (Bach, Händel, Vivaldi) </h4></button>
+        <div id="Contenido_Barroco" style="display: none;"></div>
+        
+    </div>
+    <div class="containerObras">
+
+        <button id="Clasicismo" class="FondoObras"><h4> Classicisme (Mozart) </h4></button>
+        <div id="Contenido_Clasicismo" style="display: none;"></div>
+        
+    </div>
+    <div class="containerObras">
+
+        <button id="SXX" class="FondoObras"><h4> S.XX (Nicolay Kedrov) </h4></button>
+        <div id="Contenido_Sxx" style="display: none;"></div>
+        
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+            $('#Contenido_Renacimiento').load('Informacio/Renaixement/index.html');
+            $('#Contenido_Barroco').load('Informacio/Barroc/index.html');
+            $('#Contenido_Clasicismo').load('Informacio/Classicisme/index.html');
+            $('#Contenido_Sxx').load('Informacio/S.XX/index.html');
+    });
+    
+            
+    $(document).ready(function() {
+        $('#Renacimiento').click(function(){
+            $('#Contenido_Renacimiento').slideToggle();
+        });
+        $('#Barroco').click(function(){
+            $('#Contenido_Barroco').slideToggle();
+        });
+        $('#Clasicismo').click(function(){
+            $('#Contenido_Clasicismo').slideToggle();
+        });
+        $('#SXX').click(function(){
+            $('#Contenido_Sxx').slideToggle();
+        });
+    });
+</script> 
